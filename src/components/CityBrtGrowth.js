@@ -27,7 +27,7 @@ function CityBrtGrowth({title, values, labels}) {
             row: 1,
             column: 2
           },
-          hoverinfo: 'label+percent+name',
+          hoverinfo: 'none',
           textinfo: 'none'
         },{
           values: allValues[1],
@@ -38,7 +38,7 @@ function CityBrtGrowth({title, values, labels}) {
             row: 0,
             column: 1
           },
-          hoverinfo: 'label+percent+name',
+          hoverinfo: 'none',
           textinfo: 'none'
         },{
           values: allValues[2],
@@ -49,7 +49,7 @@ function CityBrtGrowth({title, values, labels}) {
             row: 0,
             column: 0
           },
-          hoverinfo: 'label+percent+name',
+          hoverinfo: 'none',
           textinfo: 'none'
         },{
           values: allValues[3],
@@ -60,7 +60,7 @@ function CityBrtGrowth({title, values, labels}) {
             row: 0,
             column: 0
           },
-          hoverinfo: 'label+percent+name',
+          hoverinfo: 'none',
           textinfo: 'none'
         },{
           values: allValues[4],
@@ -71,7 +71,7 @@ function CityBrtGrowth({title, values, labels}) {
             row: 0,
             column: 0
           },
-          hoverinfo: 'label+percent+name',
+          hoverinfo: 'none',
           textinfo: 'none'
         },{
           values: allValues[5],
@@ -81,7 +81,10 @@ function CityBrtGrowth({title, values, labels}) {
           domain: {
             row: 0,
             column: 0
-          },{
+          },
+          hoverinfo: 'none',
+          textinfo: 'none'
+        },{
             values: allValues[6],
             labels: allLabels[6],
             type: 'bar',
@@ -90,7 +93,7 @@ function CityBrtGrowth({title, values, labels}) {
               row: 0,
               column: 0
             },
-            hoverinfo: 'label+percent+name',
+            hoverinfo: 'none',
             textinfo: 'none'
           },{
             values: allValues[7],
@@ -101,12 +104,31 @@ function CityBrtGrowth({title, values, labels}) {
               row: 0,
               column: 0
             },
-            hoverinfo: 'label+percent+name',
+            hoverinfo: 'none',
             textinfo: 'none'
+          },{
+            values: allValues[8],
+            labels: allLabels[8],
+            type: 'bar',
+            name: 'Sydney, Australia',
+            domain: {
+            row: 0,
+            column: 0
           },
           hoverinfo: 'label+percent+name',
           textinfo: 'none'
-        },
+          },{
+            values: allValues[9],
+            labels: allLabels[9],
+            type: 'bar',
+            name: 'Madrid, Spain',
+            domain: {
+            row: 0,
+            column: 0
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+          },
         ]}
         layout = {{
           height: 400,
