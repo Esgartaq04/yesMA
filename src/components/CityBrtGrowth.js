@@ -1,0 +1,91 @@
+// https://plotly.com/javascript/reference/index/
+import React from 'react';
+import Plot from 'react-plotly.js';
+
+
+function CityBrtGrowth({title, values, labels}) {
+      var allLabels = [
+
+        ['Cleveland','Eugene', 'LasVegas', 'New York', 'Honolulu'
+        , 'Miami', 'Istanbul', 'Bisbane', 'Sydney', 'Madrid' ],
+      ];
+      var allValues = [
+        // totals
+      [60, 74, 25, 7, 59, 
+      50, 150, 56, 56, 85],
+      ];
+
+      /*var trace1 = {
+        x: allLabels,
+        y: allValues,
+        type: 'bar',
+        text: allValues.map(String),
+        textposition: 'auto',
+        hoverinfo: 'none',
+        marker: {
+          color: 'rgb(158,202,225)',
+          opacity: 0.6,
+          line: {
+            color: 'rgb(8,48,107)',
+            width: 1.5
+            }
+          }
+        };
+        var data = [trace1];
+
+        var layout = {
+          title: 'City Publc Transit Growth due to BRT',
+          barmode: 'stack'
+        };
+
+      Plotly.newPlot('myDiv', data, layout);*/
+
+    return (
+
+      <Plot
+        data = {[{
+          values: allValues[0],
+          labels: allLabels[0],
+          type: 'bar',
+          name: 'BRT City Grwoth',
+          domain: {
+            row: 1,
+            column: 2
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },{
+          values: allValues[1],
+          labels: allLabels[1],
+          type: 'bar',
+          name: 'Car Injuries and Deaths',
+          domain: {
+            row: 0,
+            column: 1
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },{
+          values: allValues[2],
+          labels: allLabels[2],
+          type: 'bar',
+          name: 'Pedestrians',
+          domain: {
+            row: 0,
+            column: 0
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },
+        ]}
+        layout = {{
+          height: 400,
+          width: 500,
+          grid: {rows: 2, columns: 2},
+          title: "City Publc Transit Growth due to BRT"
+        }}
+      />
+    );
+  }
+export default CityBrtGrowth;
+
