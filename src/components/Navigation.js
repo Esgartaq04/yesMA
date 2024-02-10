@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaCarSide } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
-import { useState, useEffect } from 'react';
 
 
 function Navigation() {

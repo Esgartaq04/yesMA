@@ -6,8 +6,8 @@ import Plot from 'react-plotly.js';
 function CityBrtGrowth({title, values, labels}) {
       var allLabels = [
 
-        ['Cleveland','Eugene', 'LasVegas', 'New York', 'Honolulu'
-        , 'Miami', 'Istanbul', 'Bisbane', 'Sydney', 'Madrid' ],
+        ['Cleveland, Ohio','Eugene, Oregon', 'LasVegas, Nevada', 'New York, New York', 'Honolulu, Hawai'
+        , 'Miami, Florida', 'Istanbul, Turkey', 'Bisbane, Australia', 'Sydney, Australia', 'Madrid, Spain' ],
       ];
       var allValues = [
         // totals
@@ -47,7 +47,7 @@ function CityBrtGrowth({title, values, labels}) {
           values: allValues[0],
           labels: allLabels[0],
           type: 'bar',
-          name: 'BRT City Grwoth',
+          name: 'Cleveland, Ohio',
           domain: {
             row: 1,
             column: 2
@@ -68,6 +68,17 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[2],
           labels: allLabels[2],
+          type: 'bar',
+          name: 'Pedestrians',
+          domain: {
+            row: 0,
+            column: 0
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },{
+          values: allValues[3],
+          labels: allLabels[3],
           type: 'bar',
           name: 'Pedestrians',
           domain: {
