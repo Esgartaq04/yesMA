@@ -21,7 +21,7 @@ function CityBrtGrowth({title, values, labels}) {
         data = {[{
           values: allValues[0],
           labels: allLabels[0],
-          type: 'bar',
+          type: 'pie',
           name: 'Cleveland, Ohio',
           domain: {
             row: 1,
@@ -32,7 +32,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[1],
           labels: allLabels[1],
-          type: 'bar',
+          type: 'pie',
           name: 'Eugene, Oregon',
           domain: {
             row: 0,
@@ -43,7 +43,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[2],
           labels: allLabels[2],
-          type: 'bar',
+          type: 'pie',
           name: 'Las Vega, Nevada',
           domain: {
             row: 0,
@@ -54,7 +54,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[3],
           labels: allLabels[3],
-          type: 'bar',
+          type: 'pie',
           name: 'New York, New York',
           domain: {
             row: 0,
@@ -65,7 +65,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[4],
           labels: allLabels[4],
-          type: 'bar',
+          type: 'pie',
           name: 'Honolulu, Hawai',
           domain: {
             row: 0,
@@ -76,7 +76,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[5],
           labels: allLabels[5],
-          type: 'bar',
+          type: 'pie',
           name: 'Miami, Florida',
           domain: {
             row: 0,
@@ -87,7 +87,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
             values: allValues[6],
             labels: allLabels[6],
-            type: 'bar',
+            type: 'pie',
             name: 'Istanbul, Turkey',
             domain: {
               row: 0,
@@ -98,7 +98,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[7],
             labels: allLabels[7],
-            type: 'bar',
+            type: 'pie',
             name: 'Brisbane, Australia',
             domain: {
               row: 0,
@@ -109,7 +109,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[8],
             labels: allLabels[8],
-            type: 'bar',
+            type: 'pie',
             name: 'Sydney, Australia',
             domain: {
             row: 0,
@@ -120,7 +120,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[9],
             labels: allLabels[9],
-            type: 'bar',
+            type: 'pie',
             name: 'Madrid, Spain',
             domain: {
             row: 0,
