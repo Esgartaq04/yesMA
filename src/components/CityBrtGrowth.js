@@ -33,7 +33,7 @@ function CityBrtGrowth({title, values, labels}) {
           values: allValues[1],
           labels: allLabels[1],
           type: 'bar',
-          name: 'Car Injuries and Deaths',
+          name: 'Eugene, Oregon',
           domain: {
             row: 0,
             column: 1
@@ -44,7 +44,7 @@ function CityBrtGrowth({title, values, labels}) {
           values: allValues[2],
           labels: allLabels[2],
           type: 'bar',
-          name: 'Pedestrians',
+          name: 'Las Vega, Nevada',
           domain: {
             row: 0,
             column: 0
@@ -55,10 +55,54 @@ function CityBrtGrowth({title, values, labels}) {
           values: allValues[3],
           labels: allLabels[3],
           type: 'bar',
-          name: 'Pedestrians',
+          name: 'New York, New York',
           domain: {
             row: 0,
             column: 0
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },{
+          values: allValues[4],
+          labels: allLabels[4],
+          type: 'bar',
+          name: 'Honolulu, Hawai',
+          domain: {
+            row: 0,
+            column: 0
+          },
+          hoverinfo: 'label+percent+name',
+          textinfo: 'none'
+        },{
+          values: allValues[5],
+          labels: allLabels[5],
+          type: 'bar',
+          name: 'Miami, Florida',
+          domain: {
+            row: 0,
+            column: 0
+          },{
+            values: allValues[6],
+            labels: allLabels[6],
+            type: 'bar',
+            name: 'Istanbul, Turkey',
+            domain: {
+              row: 0,
+              column: 0
+            },
+            hoverinfo: 'label+percent+name',
+            textinfo: 'none'
+          },{
+            values: allValues[7],
+            labels: allLabels[7],
+            type: 'bar',
+            name: 'Brisbane, Australia',
+            domain: {
+              row: 0,
+              column: 0
+            },
+            hoverinfo: 'label+percent+name',
+            textinfo: 'none'
           },
           hoverinfo: 'label+percent+name',
           textinfo: 'none'
