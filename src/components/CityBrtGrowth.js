@@ -15,31 +15,6 @@ function CityBrtGrowth({title, values, labels}) {
       50, 150, 56, 56, 85],
       ];
 
-      /*var trace1 = {
-        x: allLabels,
-        y: allValues,
-        type: 'bar',
-        text: allValues.map(String),
-        textposition: 'auto',
-        hoverinfo: 'none',
-        marker: {
-          color: 'rgb(158,202,225)',
-          opacity: 0.6,
-          line: {
-            color: 'rgb(8,48,107)',
-            width: 1.5
-            }
-          }
-        };
-        var data = [trace1];
-
-        var layout = {
-          title: 'City Publc Transit Growth due to BRT',
-          barmode: 'stack'
-        };
-
-      Plotly.newPlot('myDiv', data, layout);*/
-
     return (
 
       <Plot
