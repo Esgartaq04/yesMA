@@ -5,7 +5,7 @@ import { useState, React, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import CityBrtGrowth from './components/CityBrtGrowth';
 function App() {
   useEffect(() => {
     const changeBackground = () => {
@@ -44,6 +44,7 @@ function App() {
   return (
     <div>
     <Navigation />
+    < CityBrtGrowth/>
     < BRT />
     < Footer />
     </div>

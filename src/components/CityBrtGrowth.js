@@ -21,7 +21,7 @@ function CityBrtGrowth({title, values, labels}) {
         data = {[{
           values: allValues[0],
           labels: allLabels[0],
-          type: 'pie',
+          type: 'bar',
           name: 'Cleveland, Ohio',
           domain: {
             row: 1,
@@ -32,7 +32,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[1],
           labels: allLabels[1],
-          type: 'pie',
+          type: 'bar',
           name: 'Eugene, Oregon',
           domain: {
             row: 0,
@@ -43,7 +43,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[2],
           labels: allLabels[2],
-          type: 'pie',
+          type: 'bar',
           name: 'Las Vega, Nevada',
           domain: {
             row: 0,
@@ -54,7 +54,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[3],
           labels: allLabels[3],
-          type: 'pie',
+          type: 'bar',
           name: 'New York, New York',
           domain: {
             row: 0,
@@ -65,7 +65,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[4],
           labels: allLabels[4],
-          type: 'pie',
+          type: 'bar',
           name: 'Honolulu, Hawai',
           domain: {
             row: 0,
@@ -76,7 +76,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
           values: allValues[5],
           labels: allLabels[5],
-          type: 'pie',
+          type: 'bar',
           name: 'Miami, Florida',
           domain: {
             row: 0,
@@ -87,7 +87,7 @@ function CityBrtGrowth({title, values, labels}) {
         },{
             values: allValues[6],
             labels: allLabels[6],
-            type: 'pie',
+            type: 'bar',
             name: 'Istanbul, Turkey',
             domain: {
               row: 0,
@@ -98,7 +98,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[7],
             labels: allLabels[7],
-            type: 'pie',
+            type: 'bar',
             name: 'Brisbane, Australia',
             domain: {
               row: 0,
@@ -109,7 +109,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[8],
             labels: allLabels[8],
-            type: 'pie',
+            type: 'bar',
             name: 'Sydney, Australia',
             domain: {
             row: 0,
@@ -120,7 +120,7 @@ function CityBrtGrowth({title, values, labels}) {
           },{
             values: allValues[9],
             labels: allLabels[9],
-            type: 'pie',
+            type: 'bar',
             name: 'Madrid, Spain',
             domain: {
             row: 0,
@@ -131,8 +131,8 @@ function CityBrtGrowth({title, values, labels}) {
           },
         ]}
         layout = {{
-          height: 400,
-          width: 500,
+          height: 600,
+          width: 700,
           grid: {rows: 2, columns: 2},
           title: "City Publc Transit Growth due to BRT"
         }}
